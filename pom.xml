@@ -96,7 +96,7 @@
         <capabilities>/firefox.capabilities</capabilities>
       </properties>
       <activation>
-        <activeByDefault>true</activeByDefault>
+        <activeByDefault>false</activeByDefault>
       </activation>
     </profile>
     <profile>
@@ -104,6 +104,9 @@
       <properties>
         <capabilities>/chrome.capabilities</capabilities>
       </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
     </profile>
     <profile>
       <id>ie</id>

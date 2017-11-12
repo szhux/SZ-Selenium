@@ -30,15 +30,21 @@ public class TestNgTestBase {
   public void initTestSuite() throws IOException {
     SuiteConfiguration config = new SuiteConfiguration();
     baseUrl = config.getProperty("site.url");
+//    baseUrl = "https://ya.ru/";
     if (config.hasProperty("grid.url") && !"".equals(config.getProperty("grid.url"))) {
       gridHubUrl = new URL(config.getProperty("grid.url"));
     }
     capabilities = config.getCapabilities();
+    
+
+    
   }
 
   @BeforeMethod
   public void initWebDriver() {	  
-	  System.setProperty("webdriver.gecko.driver", "/Tools/Drivers/geckodriver-v0.19.1-win32/geckodriver.exe");
+//	  System.setProperty("webdriver.gecko.driver", "/Tools/Drivers/geckodriver-v0.19.1-win32/geckodriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "/Tools/Drivers/chromedriver_win32/chromedriver.exe");
+	  
 	  driver = WebDriverPool.DEFAULT.getDriver(gridHubUrl, capabilities);
 	  
 //	  driver = WebDriverPool.DEFAULT.getDriver(DesiredCapabilities.firefox());

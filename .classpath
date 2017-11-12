@@ -55,5 +55,7 @@
 	<classpathentry kind="lib" path="C:/Tools/jars/selenium-java-3.7.1/libs/guava-23.0.jar"/>
 	<classpathentry kind="lib" path="C:/Tools/jars/selenium-java-3.7.1/libs/httpclient-4.5.3.jar"/>
 	<classpathentry kind="lib" path="C:/Tools/jars/selenium-java-3.7.1/libs/httpcore-4.4.6.jar"/>
+	<classpathentry kind="lib" path="C:/Tools/jars/MySel20Proj-1.0.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Selenium3"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
